@@ -938,9 +938,17 @@ body{
     text-decoration: underline;
   }
 }
-@media screen and (max-width:500px) {
+
+@media screen and (max-width:400px) {
   .small-container, .small-container-top{ 
-    width: 315px;
-    margin-right: 20px;
+    width: 143px;
+    height: 143px;
+  }
+}
+
+@media screen and (max-width:330px) {
+  .small-container, .small-container-top{ 
+    width: 135px;
+    height: 135px;
   }
 }
