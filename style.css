@@ -1,3 +1,9 @@
+:root {
+  --c-bg: hsl(0, 0%, 90%);
+  --c-text: hsl(0, 0%, 10%);
+  --pad: max(20px, 4vmin);
+}
+
 body{
     width: 100vw;
     font-family: 'Poppins', sans-serif;
@@ -73,7 +79,21 @@ body{
   .fa-search {
     font-size: 18px;
   }
+
+  .hamburger {
+    display: none;
+  }
   
+  .bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
   .future-container{
     position: relative;
     padding-top: 80px;
@@ -82,25 +102,25 @@ body{
     flex-direction: column;
     width: 100vw;
     justify-content: center;
-    margin-bottom: 
+    margin-bottom: 0;
   }
   
   .future-content{
     display: inherit;
     justify-content: center;
-    transform: translateX(-120px);
+    /*transform: translateX(-120px);*/
     z-index: 3;
   }
   
   .phone{
     position: absolute;
-    transform: rotate(6.17deg);
     min-width:650px;
     max-width:650px;
     min-height:650px;
     max-height:650px;
     z-index: 5;
     left: 16vw;
+    margin-top: 25px;
   }
 
  
@@ -352,7 +372,7 @@ body{
     background-color: #133454;
     display:flex;
     width: 100vw;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 35px;
     padding-bottom: 30px;
     
@@ -481,6 +501,7 @@ body{
 .footer-masthead{
   display: flex;
   flex-direction: column;
+  padding-right: 20px;
 }
 
 .footer-links {
@@ -507,4 +528,391 @@ body{
 ::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0);
   width: 12px;
+}
+
+.text-slider-mobile-bot, .text-slider-mobile{
+  display: none;
+}
+
+
+@media screen and (max-width:1680px) {
+  .phone{
+    left: 10vw;
+  }
+}
+
+@media screen and (max-width:1500px) {
+  .phone{
+    left: 1vw;
+  }
+}
+
+@media screen and (max-width:1360px) {
+  .phone{
+    left: 0vw;
+  }
+
+  #large{
+    padding-top: 4vh;
+    font-size: 70px;
+    line-height: 75px;
+    letter-spacing: 0.02em;
+  }  
+
+  .future-text{
+    position: relative;
+    width: 531px;
+    left: 10vw;
+    z-index: 5;
+    margin-top: 25px;
+  }
+
+  #small{
+    font-size: 32px;
+    letter-spacing: 0.0px;
+    margin-top: -40px;
+  }
+
+  .buttons{
+    margin-top: -15px;
+  }
+}
+
+@media screen and (max-width:1360px) {
+  .globe-container{
+    height: 922px;
+    width: 100vw;
+    transform: translateX(0px);
+  }
+
+  .left-container{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  .right-container {
+    width: 740px;
+    height: 400px;
+    margin-top: -60px;
+    margin-left: 70px;
+  }
+
+  .small-container, .small-container-top{ 
+    width: 335px;
+    margin-right: 25px;
+  }
+
+  .token-info {
+    align-items: center;
+    margin-left: -27px;
+  }
+  .token-gains{
+    margin-left: -10px;
+  }
+
+  .phone-div{
+    margin-left: 200px;
+  }
+
+  .phone-text{
+    color: white;
+    width: 520px;
+    margin-right: 0vw;
+  }
+
+  .phone-text{
+    color: white;
+    width: 445px;
+    margin-right: 23vw;
+  }
+
+  .phones-stacked{
+    height: 650px;
+  }
+}
+
+@media only screen and (max-width: 1208px) {
+  .links, .search-box{
+    display: none;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+      margin-right: 40px;
+      padding-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .future-container{
+    padding-left: 0px;
+    padding-right: 35px;
+  }
+  #large{
+    margin-top: -320px;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .phone-div{
+    margin: 0px;
+  }
+
+  .future-container{
+    height: 1000px;
+
+  }
+
+  .future-content{
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .future-text{
+    left: 0;
+    text-align: center !important;
+    width: 300px;
+  }
+
+  #small{
+    font-size:24px ;
+    text-align: center;
+    margin-top:-20px;
+    line-height: 45px;
+  }
+
+  .text-slider{
+    display: none;
+  }
+
+  .text-slider-mobile-bot, .text-slider-mobile{
+    display: block;
+    width: 100vw;
+    overflow: hidden;
+    font-size:100px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+    z-index: 2;
+    height: 150px;
+  }
+
+  .mobile-sliders{
+    margin-top: 20px;
+  }
+
+  .phone{
+    position: absolute;
+    min-width:480px;
+    max-width:480px;
+    min-height:480px;
+    max-height:480px;
+    z-index: 10;
+    text-align: center;
+    margin-left: 17%;
+    margin-top: -20px;
+  }
+
+  .buttons{
+    margin-top: 345px;
+    position: absolute;
+    font-size: 24px !important;
+    flex-direction: column;
+    text-align: center;
+    width: 296px;
+    float: none;
+  }
+
+  .email-box{
+    font-family: 'Poppins' !important;
+    min-width: 296px;
+    max-width: 296px;
+    padding: 1px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .email-box input[type="text"] {
+    text-align:center;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 32px;
+    background-color:transparent;
+    color:white;
+  }
+  
+  .email-box input[type="text"]::placeholder {
+    color: white;
+  }
+  
+  .signup-box{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 500px;
+    min-width: 296px;
+    max-width: 296px;
+  }
+
+
+  .left-container{
+    margin-top: 35px;
+    width: 312px;
+    height: 375px;
+    margin-left: 0vw;
+  }
+
+  .globe-text{
+    padding-right: 3px;
+    padding-left: 20px;
+    padding-top: 0px;
+  }
+
+  .large1{
+    font-size: 30px;
+    line-height: auto;
+  }
+  .small2{
+    font-size: 24px;
+    line-height: auto;
+  }
+
+  .right-container {
+    width: 345px;
+    height: 400px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 25px;
+    
+    border-radius: 10px;
+  }
+
+  .small-container, .small-container-top{ 
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+
+  .crypto-logo{
+    height: 46px;
+  }
+
+  .token-name, .price{
+    font-size: 16px;
+  }
+
+  .gains{
+    font-size: 20px;
+  }
+
+  .token-info {
+    align-items: center;
+    margin-left: -20px;
+  }
+
+  .globe-container{
+    height: 800px;
+  }
+
+  .phone-container{
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+  }
+
+  .phone-div{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .phones-stacked{
+    height: 422px;
+  }
+
+  .phone-text{
+    text-align: center;
+    margin-right: 0vw;
+    flex-direction: column;
+    width: 312px;
+  }
+
+  .large3{
+    width: 312px;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+  }
+  
+  .small2{
+    margin-top: 40px;
+    font-size: 24px;
+  }
+
+  .signup-box-phone{
+    align-items: center;
+    margin:0;
+    margin-left: 35px;
+    margin-bottom: 20px;
+  }
+
+  #signup{
+    
+    font-size: 30px;
+  }
+  
+  .web3-container{
+    background-size: 450px 324px; /* Set the width of the image to 50% of the wrapper's width */
+    height: 660px; /* Set the height of the wrapper to match the height of your image */
+  }
+
+  .web3-text{
+    padding-top: 40px;
+    margin-left: 39px;
+    width: 314px;
+  }
+  
+  .large4{
+    width: 250px;
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 150px
+  }
+  
+  .small2-learn{
+    margin-top: ;
+    font-size: 24px;
+    text-decoration: underline;
+  }
+
+  .extras-container{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-right: 10px;
+  }
+
+  .extra{
+    width: 312px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .extra-title, .extra-title-u, .extra-text{
+    font-size: 24px;
+    
+  }
+
+  .extra-text{
+    margin-bottom: 40px;
+  }
+  
 }
