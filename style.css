@@ -940,10 +940,28 @@ body{
 }
 
 @media screen and (max-width:400px) {
+  .small-container:nth-child(2), .small-container-top:nth-child(2){
+    margin-right: 0px;
+  }
+
+  .right-container{
+    padding-left: 8px;
+  }
+
   .small-container, .small-container-top{ 
-    width: 143px;
+    width: 145px;
     height: 143px;
   }
+
+  .token-attributes{
+    margin-left:-10px;
+  }
+
+  .crypto-logo{
+    margin-right: 0px;
+  }
+
+
 }
 
 @media screen and (max-width:330px) {
