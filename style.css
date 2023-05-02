@@ -949,7 +949,7 @@ body{
   }
 
   .small-container, .small-container-top{ 
-    width: 145px;
+    width: 140px;
     height: 143px;
   }
 
@@ -959,14 +959,5 @@ body{
 
   .crypto-logo{
     margin-right: 0px;
-  }
-
-
-}
-
-@media screen and (max-width:330px) {
-  .small-container, .small-container-top{ 
-    width: 135px;
-    height: 135px;
   }
 }
