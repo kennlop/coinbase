@@ -938,3 +938,9 @@ body{
     text-decoration: underline;
   }
 }
+@media screen and (max-width:500px) {
+  .small-container, .small-container-top{ 
+    width: 315px;
+    margin-right: 20px;
+  }
+}
