@@ -648,6 +648,8 @@ body{
   .future-container{
     padding-left: 0px;
     padding-right: 35px;
+    align-items: center;
+    justify-content: center;
   }
   #large{
     margin-top: -320px;
@@ -706,16 +708,23 @@ body{
     margin-top: 20px;
   }
 
+  .text-slider-mobile-bot .marquee-span{
+    margin-left:-125vw;
+  }
+
   .phone{
     position: absolute;
+    align-items: center;
     min-width:480px;
     max-width:480px;
     min-height:480px;
     max-height:480px;
     z-index: 10;
     text-align: center;
-    margin-left: 17%;
-    margin-top: -20px;
+    margin-left: 5%;
+    top: 58%;
+    left: 40%;
+    transform: translate(-50%, -50%);
   }
 
   .buttons{
@@ -914,5 +923,18 @@ body{
   .extra-text{
     margin-bottom: 40px;
   }
-  
+
+  .footer{
+    font-size: 16px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .title{
+    text-decoration: underline;
+  }
 }
