@@ -257,7 +257,7 @@ body{
 
 
 .globe-container{
-    background-image: url('https://cdn.discordapp.com/attachments/1019070348848803922/1098689938943385670/Instasize_Upscaler_1.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/kennlop/ImageHosting/globe-bg.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -416,7 +416,7 @@ body{
 .web3-container{
   width: 100vw;
   padding-top: 35px;
-  background-image: url(https://cdn.discordapp.com/attachments/1019070348848803922/1100524510270201877/image_5.png);
+  background-image: url('https://cdn.jsdelivr.net/gh/kennlop/ImageHosting/sky-bg.png');
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 900px 660px; /* Set the width of the image to 50% of the wrapper's width */
